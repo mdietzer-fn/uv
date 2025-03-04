@@ -11,11 +11,13 @@ concurrency:
   cancel-in-progress: true
 
 env:
+  PACKAGE_NAME: uv
+  MODULE_NAME: uv
   CARGO_INCREMENTAL: 0
   CARGO_NET_RETRY: 10
   CARGO_TERM_COLOR: always
   RUSTUP_MAX_RETRIES: 10
-  PYTHON_VERSION: "3.12"
+  PYTHON_VERSION: "3.11"
 
 jobs:
   determine_changes:
