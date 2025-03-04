@@ -31,7 +31,7 @@ pub enum Error {
     MissingDistInfoPackageName(String, String),
     #[error("The .dist-info directory name contains invalid characters")]
     InvalidName(#[from] InvalidNameError),
-    #[error("The metadata at {0} is invalid because: {1}")]
+    #[error("The metadata at {0} is invalid: {1}")]
     InvalidMetadata(String, Box<uv_pypi_types::MetadataError>),
     #[error("Failed to read from zip file")]
     Zip(#[from] zip::result::ZipError),
