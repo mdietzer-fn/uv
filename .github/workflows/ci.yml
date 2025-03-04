@@ -417,6 +417,7 @@ jobs:
   build-binary-linux-libc:
     timeout-minutes: 10
     needs: determine_changes
+    runs-on: ubuntu-latest
     name: "build binary | linux libc"
     steps:
       - uses: actions/checkout@v4
@@ -440,6 +441,7 @@ jobs:
   build-binary-linux-musl:
     timeout-minutes: 10
     needs: determine_changes
+    runs-on: ubuntu-latest
     name: "build binary | linux musl"
     steps:
       - uses: actions/checkout@v4
