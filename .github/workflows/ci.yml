@@ -2071,6 +2071,7 @@ jobs:
           token: ${{ secrets.CODSPEED_TOKEN }}
 
   linux:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         target:
